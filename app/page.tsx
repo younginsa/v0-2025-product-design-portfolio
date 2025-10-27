@@ -69,7 +69,7 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="flex-1 container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl pt-10">
+      <main className="flex-1 container mx-auto px-4 md:px-6 lg:px-8 max-w-[90rem] pt-10">
         {/* Featured Project Block */}
         <section id="featured-project" className="py-10 md:py-20 my-0 mt-20">
           <div className="flex flex-col md:flex-row justify-between gap-10 items-start mx-6">
@@ -119,11 +119,11 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Projects Section */}
+        {/* Works Section - 6 projects in 3 columns */}
         <section id="project" className="py-0">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
             {/* Project Card 1 */}
-            <div className="project-card border-border cursor-pointer p-6 border-0">
+            <div className="project-card border-border cursor-pointer p-4 border-0">
               <div className="aspect-[4/3] w-full overflow-hidden mb-6">
                 <Image
                   src="/images/fleet-cyber-security.jpg"
@@ -145,7 +145,7 @@ export default function Home() {
             </div>
 
             {/* Project Card 2 */}
-            <div className="project-card border-border cursor-pointer p-6 border-0">
+            <div className="project-card border-border cursor-pointer p-4 border-0">
               <div className="aspect-[4/3] w-full overflow-hidden mb-6">
                 <Image
                   src="/images/secure-network-management.jpg"
@@ -165,14 +165,9 @@ export default function Home() {
                 </p>
               </div>
             </div>
-          </div>
-        </section>
 
-        {/* Projects Section 2 */}
-        <section id="project-2" className="py-0">
-          <div className="grid grid-cols-1 md:grid-cols-2 mt-6 gap-2">
-            {/* Project Card 1 */}
-            <div className="project-card border-border cursor-pointer p-6 border-0">
+            {/* Project Card 3 */}
+            <div className="project-card border-border cursor-pointer p-4 border-0">
               <div className="aspect-[4/3] w-full overflow-hidden mb-6">
                 <Image
                   src="/images/secure-network-management-project.jpg"
@@ -193,8 +188,8 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Project Card 2 */}
-            <div className="project-card border-border cursor-pointer p-6 border-0">
+            {/* Project Card 4 - Second Row */}
+            <div className="project-card border-border cursor-pointer p-4 border-0">
               <div className="aspect-[4/3] w-full overflow-hidden mb-6">
                 <Image
                   src="/placeholder.svg?height=400&width=600"
@@ -206,11 +201,55 @@ export default function Home() {
               </div>
               <div>
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2 gap-1 md:gap-0">
-                  <h3 className="text-base font-normal text-foreground">Geard.ai </h3>
+                  <h3 className="text-base font-normal text-foreground">Geard.ai</h3>
                   <p className="text-base text-muted-foreground font-light">Freelance</p>
                 </div>
                 <p className="hidden md:block text-sm text-muted-foreground font-light max-w-[80%]">
                   TLDR; AI-powered platform for enhancing workflow.
+                </p>
+              </div>
+            </div>
+
+            {/* Project Card 5 */}
+            <div className="project-card border-border cursor-pointer p-4 border-0">
+              <div className="aspect-[4/3] w-full overflow-hidden mb-6">
+                <Image
+                  src="/placeholder.svg?height=400&width=600"
+                  alt="Project thumbnail"
+                  width={600}
+                  height={400}
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <div>
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2 gap-1 md:gap-0">
+                  <h3 className="text-base font-normal text-foreground">Project Five</h3>
+                  <p className="text-base text-muted-foreground font-light">Company</p>
+                </div>
+                <p className="hidden md:block text-sm text-muted-foreground font-light max-w-[80%]">
+                  TLDR; Description of project five.
+                </p>
+              </div>
+            </div>
+
+            {/* Project Card 6 */}
+            <div className="project-card border-border cursor-pointer p-4 border-0">
+              <div className="aspect-[4/3] w-full overflow-hidden mb-6">
+                <Image
+                  src="/placeholder.svg?height=400&width=600"
+                  alt="Project thumbnail"
+                  width={600}
+                  height={400}
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <div>
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2 gap-1 md:gap-0">
+                  <h3 className="text-base font-normal text-foreground">Project Six</h3>
+                  <p className="text-base text-muted-foreground font-light">Company</p>
+                </div>
+                <p className="hidden md:block text-sm text-muted-foreground font-light max-w-[80%]">
+                  TLDR; Description of project six.
                 </p>
               </div>
             </div>
@@ -226,11 +265,14 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Projects Section - 3 projects in single row */}
+        <section id="project-2" className="py-0 mt-6"></section>
+
         {/* Blog Section */}
         <section id="blog" className="py-10">
-          <div className="grid md:grid-cols-2 gap-2">
+          <div className="grid md:grid-cols-3 gap-2">
             {/* Blog Card 1 */}
-            <div className="border-border cursor-pointer group p-6 border-0 bg-transparent">
+            <div className="border-border cursor-pointer group p-4 border-0 bg-transparent">
               <div className="aspect-video w-full overflow-hidden mb-6">
                 <Image
                   src="/placeholder.svg?height=400&width=600"
@@ -257,7 +299,7 @@ export default function Home() {
             </div>
 
             {/* Blog Card 2 */}
-            <div className="border-border cursor-pointer group p-6 border-0 bg-transparent">
+            <div className="border-border cursor-pointer group p-4 border-0 bg-transparent">
               <div className="aspect-video w-full overflow-hidden mb-6">
                 <Image
                   src="/placeholder.svg?height=400&width=600"
@@ -276,6 +318,33 @@ export default function Home() {
                       className="nav-link text-muted-foreground hover:text-foreground transition-colors text-base"
                     >
                       GitHub
+                    </Link>
+                    <ArrowUpRight className="h-4 w-4 text-muted-foreground" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Blog Card 3 */}
+            <div className="border-border cursor-pointer group p-4 border-0 bg-transparent">
+              <div className="aspect-video w-full overflow-hidden mb-6">
+                <Image
+                  src="/placeholder.svg?height=400&width=600"
+                  alt="Blog post thumbnail"
+                  width={600}
+                  height={400}
+                  className="blog-image h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+              </div>
+              <div>
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-1 md:gap-0">
+                  <h3 className="text-base leading-7 font-normal text-foreground">Design System Template</h3>
+                  <div className="flex items-center gap-1">
+                    <Link
+                      href="#"
+                      className="nav-link text-muted-foreground hover:text-foreground transition-colors text-base"
+                    >
+                      Notion
                     </Link>
                     <ArrowUpRight className="h-4 w-4 text-muted-foreground" />
                   </div>
