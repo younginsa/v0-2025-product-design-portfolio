@@ -144,9 +144,9 @@ export default function Home() {
               <div>
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2 gap-1 md:gap-0">
                   <h3 className="text-base text-foreground font-normal">Ship Cyber security </h3>
-                  <p className="text-base text-muted-foreground font-normal">Avikus</p>
+                  <p className="text-base text-input font-normal">Avikus</p>
                 </div>
-                <p className="hidden md:block text-sm text-muted-foreground max-w-[80%] font-normal">
+                <p className="hidden md:block text-sm text-input max-w-[80%] font-normal">
                   TLDR; Fleet management systems with real-time threat monitoring.
                 </p>
               </div>
@@ -171,9 +171,9 @@ export default function Home() {
               <div>
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2 gap-1 md:gap-0">
                   <h3 className="text-base font-normal text-foreground">Neuboat</h3>
-                  <p className="text-base text-muted-foreground font-light">Avikus</p>
+                  <p className="text-base text-input font-normal">Avikus</p>
                 </div>
-                <p className="hidden md:block text-sm text-muted-foreground font-light max-w-[80%]">
+                <p className="hidden md:block text-sm text-input font-normal max-w-[80%]">
                   TLDR; Boat control &amp; navigation iOS app
                 </p>
               </div>
@@ -198,9 +198,9 @@ export default function Home() {
               <div>
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2 gap-1 md:gap-0">
                   <h3 className="text-base font-normal text-foreground">HiNAS Cloud</h3>
-                  <p className="text-base text-muted-foreground font-light">Avikus</p>
+                  <p className="text-base text-input font-normal">Avikus</p>
                 </div>
-                <p className="hidden md:block text-sm text-muted-foreground font-light max-w-[80%]">
+                <p className="hidden md:block text-sm text-input font-normal max-w-[80%]">
                   TLDR; iF Design 2024 awareded!
                 </p>
               </div>
@@ -225,9 +225,9 @@ export default function Home() {
               <div>
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2 gap-1 md:gap-0">
                   <h3 className="text-base font-normal text-foreground">{"360° SVM"} </h3>
-                  <p className="text-base text-muted-foreground font-light">Avikus</p>
+                  <p className="text-base text-input font-normal">Avikus</p>
                 </div>
-                <p className="hidden md:block text-sm text-muted-foreground font-light max-w-[80%]">
+                <p className="hidden md:block text-sm text-input font-normal max-w-[80%]">
                   TLDR; Ship Surround View Monitoring system.
                 </p>
               </div>
@@ -247,9 +247,9 @@ export default function Home() {
               <div>
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2 gap-1 md:gap-0">
                   <h3 className="text-base font-normal text-foreground">Geared.ai</h3>
-                  <p className="text-base text-muted-foreground font-light">Freelance</p>
+                  <p className="text-base text-input font-normal">Freelance</p>
                 </div>
-                <p className="hidden md:block text-sm text-muted-foreground font-light max-w-[80%]">
+                <p className="hidden md:block text-sm text-input font-normal max-w-[80%]">
                   TLDR; AI-powered platform for enhancing workflow.
                 </p>
               </div>
@@ -269,9 +269,9 @@ export default function Home() {
               <div>
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2 gap-1 md:gap-0">
                   <h3 className="text-base font-normal text-foreground">Enerbuild</h3>
-                  <p className="text-base text-muted-foreground font-light">Freelance</p>
+                  <p className="text-base text-input font-normal">Freelance</p>
                 </div>
-                <p className="hidden md:block text-sm text-muted-foreground font-light max-w-[80%]">
+                <p className="hidden md:block text-sm text-input font-normal max-w-[80%]">
                   TLDR; Architectural Design Platform for Energy Planning
                 </p>
               </div>
