@@ -314,26 +314,7 @@ export default function Home() {
           <div className="max-w-4xl">
             <h2 className="text-foreground text-2xl font-light">
               I optimize{" "}
-              <span 
-                className="inline-block relative overflow-hidden align-bottom transition-all duration-300 ease-in-out" 
-                style={{ width: containerWidth > 0 ? `${containerWidth}px` : 'auto', height: '1.2em' }}
-              >
-                <span ref={measureRef} className="invisible absolute whitespace-nowrap" aria-hidden="true" />
-                {words.map((word, index) => (
-                  <span
-                    key={word}
-                    className={`absolute left-0 whitespace-nowrap transition-all duration-500 ease-in-out leading-6 ${
-                      index === currentWordIndex 
-                        ? 'opacity-100 translate-y-0' 
-                        : index === (currentWordIndex - 1 + words.length) % words.length
-                        ? 'opacity-0 -translate-y-full'
-                        : 'opacity-0 translate-y-full'
-                    }`}
-                  >
-                    {word}
-                  </span>
-                ))}
-              </span>{" "}
+              {" "}
               to achieve product outcomes.
             </h2>
           </div>
