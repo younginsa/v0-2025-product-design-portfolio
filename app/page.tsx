@@ -94,6 +94,18 @@ export default function Home() {
                 <h2 className="font-normal text-base text-primary mb-[60px]" style={{ fontFamily: '"Andale Mono", monospace' }}>
                    @Avikus (HD Hyundai)  
                 </h2>
+
+                {/* Two column text block */}
+                <div className="flex gap-16" style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>
+                  <div className="flex flex-col">
+                    <span className="text-base text-muted-foreground">Hello I'm</span>
+                    <span className="text-base text-foreground font-medium">Youngin Sa</span>
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="text-base text-muted-foreground">I design to achieve</span>
+                    <span className="text-base text-foreground font-medium">Complexity became clarity</span>
+                  </div>
+                </div>
               </div>
 
               {/* Gradient overlay - highest z-index, only affects text, hidden in dark mode */}
