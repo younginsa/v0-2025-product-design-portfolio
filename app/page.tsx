@@ -91,7 +91,7 @@ export default function Home() {
                 <h2 className="text-foreground text-4xl font-semibold tracking-tight mb-6" style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>
                   {"iF Award winner:"} 
                 </h2>
-                <h2 className="mb-5 text-2xl font-medium text-input">
+                <h2 className="mb-5 text-input text-xl font-normal">
                    @Avikus (HD Hyundai)  
                 </h2>
               </div>
