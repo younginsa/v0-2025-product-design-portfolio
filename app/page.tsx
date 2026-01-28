@@ -144,9 +144,9 @@ export default function Home() {
               <div>
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2 gap-1 md:gap-0">
                   <h3 className="text-base text-foreground font-normal">Ship Cyber security </h3>
-                  <p className="text-base text-muted-foreground font-light">Avikus</p>
+                  <p className="text-base text-muted-foreground font-normal">Avikus</p>
                 </div>
-                <p className="hidden md:block text-sm text-muted-foreground font-light max-w-[80%]">
+                <p className="hidden md:block text-sm text-muted-foreground max-w-[80%] font-normal">
                   TLDR; Fleet management systems with real-time threat monitoring.
                 </p>
               </div>
