@@ -339,7 +339,7 @@ export default function Home() {
               </div>
               <div>
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-1 md:gap-0">
-                  <h3 className="text-base leading-7 font-normal text-foreground"> Measure text in mm </h3>
+                  <h3 className="text-base leading-7 font-normal text-foreground"> Measure text </h3>
                   <div className="flex items-center gap-1">
                     <Link
                       href="https://www.figma.com/community/plugin/1585181547477168350"
