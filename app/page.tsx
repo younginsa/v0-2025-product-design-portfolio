@@ -423,20 +423,20 @@ export default function Home() {
                 href="https://attachments.are.na/39370898/63cf2567bbc4526b91aca361575e5002.pdf?1757289697"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="footer-link text-base font-light"
+                className="footer-link text-base font-normal text-input"
               >
                 Resume
               </Link>
               <Link
                 href="https://www.linkedin.com/in/young-in-sa-921b32176/"
-                className="footer-link text-base font-light"
+                className="footer-link text-base font-normal text-input"
               >
                 LinkedIn
               </Link>
-              <Link href="https://dribbble.com/youngsah" className="footer-link text-base font-light">
+              <Link href="https://dribbble.com/youngsah" className="footer-link text-base font-normal text-input">
                 Dribbble
               </Link>
-              <Link href="#" className="footer-link text-base font-light">
+              <Link href="#" className="footer-link text-base font-normal text-input">
                 Email
               </Link>
             </div>
