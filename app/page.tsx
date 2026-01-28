@@ -13,6 +13,13 @@ export default function Home() {
   const textAreaRef = useRef<HTMLDivElement>(null)
   const { theme } = useTheme()
   const [mounted, setMounted] = useState(false)
+  
+  // Animated words
+  const words = ["workflow", "product", "design system"]
+  const [currentWordIndex, setCurrentWordIndex] = useState(0)
+  const [containerWidth, setContainerWidth] = useState(0)
+  const wordRefs = useRef<(HTMLSpanElement | null)[]>([])
+  const measureRef = useRef<HTMLSpanElement>(null)
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -31,6 +38,29 @@ export default function Home() {
 
   useEffect(() => {
     setMounted(true)
+  }, [])
+
+  // Measure initial word width
+  useEffect(() => {
+    if (measureRef.current) {
+      measureRef.current.textContent = words[0]
+      setContainerWidth(measureRef.current.offsetWidth)
+    }
+  }, [])
+
+  // Cycle through words and update width
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentWordIndex((prev) => {
+        const nextIndex = (prev + 1) % words.length
+        if (measureRef.current) {
+          measureRef.current.textContent = words[nextIndex]
+          setContainerWidth(measureRef.current.offsetWidth)
+        }
+        return nextIndex
+      })
+    }, 4000)
+    return () => clearInterval(interval)
   }, [])
 
   return (
@@ -284,11 +314,25 @@ export default function Home() {
           <div className="max-w-4xl">
             <h2 className="text-foreground text-2xl font-light">
               I optimize{" "}
-              <span className="animated-word-container leading-[1.6rem]">
-                <span className="invisible">design system</span>
-                <span className="animated-word">workflow</span>
-                <span className="animated-word">product</span>
-                <span className="animated-word">design system</span>
+              <span 
+                className="inline-block relative overflow-hidden align-bottom transition-all duration-300 ease-in-out" 
+                style={{ width: containerWidth > 0 ? `${containerWidth}px` : 'auto', height: '1.2em' }}
+              >
+                <span ref={measureRef} className="invisible absolute whitespace-nowrap" aria-hidden="true" />
+                {words.map((word, index) => (
+                  <span
+                    key={word}
+                    className={`absolute left-0 whitespace-nowrap transition-all duration-500 ease-in-out ${
+                      index === currentWordIndex 
+                        ? 'opacity-100 translate-y-0' 
+                        : index === (currentWordIndex - 1 + words.length) % words.length
+                        ? 'opacity-0 -translate-y-full'
+                        : 'opacity-0 translate-y-full'
+                    }`}
+                  >
+                    {word}
+                  </span>
+                ))}
               </span>{" "}
               to achieve product outcomes.
             </h2>
