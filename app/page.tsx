@@ -88,6 +88,9 @@ export default function Home() {
                 <h2 className="mb-6 text-foreground text-4xl font-semibold tracking-tighter">
                   {"Design for the Ocean,"} 
                 </h2>
+                <h2 className="mb-6 text-foreground text-4xl font-semibold tracking-tighter">
+                  {"iF Award winner:"} 
+                </h2>
                 <h2 className="mb-5 text-2xl font-medium text-input">
                    @Avikus (HD Hyundai)  
                 </h2>
