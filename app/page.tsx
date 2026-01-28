@@ -284,7 +284,8 @@ export default function Home() {
           <div className="max-w-4xl">
             <h2 className="text-foreground text-2xl font-light">
               I optimize{" "}
-              <span className="animated-word-container leading-[1.6rem]" style={{ width: "120px" }}>
+              <span className="animated-word-container leading-[1.6rem]">
+                <span className="invisible">design system</span>
                 <span className="animated-word">workflow</span>
                 <span className="animated-word">product</span>
                 <span className="animated-word">design system</span>
