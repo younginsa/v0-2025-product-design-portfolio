@@ -10,6 +10,7 @@
   --color-brand-secondary: 93 98 117;
   --color-brand-accent: 133 137 152;
 
+  /* Updated font to explicit sans-serif stack */
   /* Typography */
   --font-family-primary: "Inter", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
     sans-serif;
@@ -209,7 +210,7 @@
 }
 
 .project-card:hover {
-  transform: translateY(-16px) scale(1.02);
+  transform: translateY(-4px) scale(1);
   box-shadow: 0 25px 50px -12px rgba(107, 114, 128, 0.2);
   border-radius: 0.75rem;
   background-color: oklch(var(--card));
@@ -226,10 +227,6 @@
   transform: scale(1);
 }
 
-.blog-image:hover {
-  transform: scale(1.1);
-}
-
 /* Button Hover Animations */
 .resume-button {
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -237,7 +234,6 @@
 }
 
 .resume-button:hover {
-  transform: scale(1.02);
   background-color: oklch(var(--accent));
   color: oklch(var(--accent-foreground));
 }
@@ -266,6 +262,17 @@
   color: rgb(209 213 219);
 }
 
+/* Added summary card dark mode background */
+.summary-card {
+  background-color: #fdfdff;
+  box-shadow: 0 4px 60px -15px rgba(0, 0, 0, 0.08);
+}
+
+.dark .summary-card {
+  background-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 60px -15px rgba(0, 0, 0, 0.3);
+}
+
 /* Global selection styling */
 ::selection {
   background: rgb(var(--color-brand-primary));
@@ -284,6 +291,64 @@
   transition-duration: 200ms;
 }
 
+/* Animated word rotation */
+/* Fixed animation to prevent overlapping and ensure only active word is visible */
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  8% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  25% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  33% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+/* Fixed width issue - container uses inline width, words properly hidden when not active */
+.animated-word-container {
+  display: inline-block;
+  position: relative;
+  height: 1.2em;
+  vertical-align: bottom;
+  overflow: hidden;
+  border-bottom: 2px solid currentColor;
+  padding: 0 4px;
+  margin: 0 2px;
+}
+
+.animated-word {
+  position: absolute;
+  left: 4px;
+  top: 0;
+  white-space: nowrap;
+  opacity: 0;
+  animation: slideUp 12s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.animated-word:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.animated-word:nth-child(2) {
+  animation-delay: 4s;
+}
+
+.animated-word:nth-child(3) {
+  animation-delay: 8s;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -294,6 +359,9 @@
 }
 
 @theme inline {
+  /* Added font-sans variable for Tailwind */
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", sans-serif;
+
   --color-background: oklch(var(--background));
   --color-foreground: oklch(var(--foreground));
   --color-card: oklch(var(--card));
