@@ -85,11 +85,11 @@ export default function Home() {
               {/* Text content layer - middle z-index */}
               <div className="relative z-10 w-full max-w-sm leading-6 h-auto">
                 
-                <h2 className="text-2xl mb-6 font-medium text-foreground">
-                  Design for the Ocean, at Avikus (HD Hyundai),
+                <h2 className="mb-6 text-foreground text-4xl font-semibold tracking-tighter">
+                  {"Design for the Ocean,"} 
                 </h2>
                 <h2 className="mb-5 text-2xl font-medium text-input">
-                  <span className="cursor-pointer text-foreground font-semibold">iF Design Award </span> winner.
+                   @Avikus (HD Hyundai)  
                 </h2>
               </div>
 
