@@ -83,12 +83,12 @@ export default function Home() {
               <div className="absolute inset-0 bg-transparent z-0"></div>
 
               {/* Text content layer - middle z-index */}
-              <div className="relative z-10 w-full max-w-sm leading-6 h-auto">
+              <div className="relative z-10 w-full max-w-sm h-auto tracking-normal leading-6">
                 
-                <h2 className="mb-6 text-foreground text-4xl font-semibold tracking-tighter">
+                <h2 className="text-foreground text-4xl font-semibold tracking-tighter mb-0.5">
                   {"Design for the Ocean,"} 
                 </h2>
-                <h2 className="mb-6 text-foreground text-4xl font-semibold tracking-tighter">
+                <h2 className="text-foreground text-4xl font-semibold tracking-tighter mb-6">
                   {"iF Award winner:"} 
                 </h2>
                 <h2 className="mb-5 text-2xl font-medium text-input">
