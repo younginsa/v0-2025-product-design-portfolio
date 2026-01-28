@@ -313,7 +313,7 @@ export default function Home() {
         <section id="projects-intro" className="py-[70px] pt-32 pb-0 pl-6 pr-6">
           <div className="max-w-4xl">
             <h2 className="text-foreground text-2xl font-light">
-              I optimize{" "}
+              I design{" "}
               {" "}
               to achieve product outcomes.
             </h2>
