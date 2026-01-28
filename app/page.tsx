@@ -85,10 +85,10 @@ export default function Home() {
               {/* Text content layer - middle z-index */}
               <div className="relative z-10 w-full max-w-sm h-auto tracking-normal leading-6">
                 
-                <h2 className="text-4xl font-semibold mb-0.5 tracking-tight text-primary" style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>
+                <h2 className="font-semibold mb-0.5 tracking-tight text-primary text-4xl" style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>
                   {"Design for the Ocean,"} 
                 </h2>
-                <h2 className="text-4xl font-semibold tracking-tight text-primary mb-3" style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>
+                <h2 className="font-semibold tracking-tight text-primary mb-3 text-4xl" style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>
                   {"iF Award winner:"} 
                 </h2>
                 <h2 className="font-normal text-base text-primary mb-20" style={{ fontFamily: '"Andale Mono", monospace' }}>
