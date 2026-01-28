@@ -88,7 +88,7 @@ export default function Home() {
                 <h2 className="text-4xl font-semibold mb-0.5 tracking-tight text-primary" style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>
                   {"Design for the Ocean,"} 
                 </h2>
-                <h2 className="text-4xl font-semibold tracking-tight mb-6 text-primary" style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>
+                <h2 className="text-4xl font-semibold tracking-tight text-primary mb-3" style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>
                   {"iF Award winner:"} 
                 </h2>
                 <h2 className="mb-5 font-normal text-base text-primary" style={{ fontFamily: '"Andale Mono", monospace' }}>
