@@ -85,13 +85,13 @@ export default function Home() {
               {/* Text content layer - middle z-index */}
               <div className="relative z-10 w-full max-w-sm h-auto tracking-normal leading-6">
                 
-                <h2 className="text-foreground text-4xl font-semibold mb-0.5 tracking-tight" style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>
+                <h2 className="text-4xl font-semibold mb-0.5 tracking-tight text-primary" style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>
                   {"Design for the Ocean,"} 
                 </h2>
-                <h2 className="text-foreground text-4xl font-semibold tracking-tight mb-6" style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>
+                <h2 className="text-4xl font-semibold tracking-tight mb-6 text-primary" style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>
                   {"iF Award winner:"} 
                 </h2>
-                <h2 className="mb-5 text-input text-xl font-normal" style={{ fontFamily: '"Andale Mono", monospace' }}>
+                <h2 className="mb-5 font-normal text-base text-primary" style={{ fontFamily: '"Andale Mono", monospace' }}>
                    @Avikus (HD Hyundai)  
                 </h2>
               </div>
