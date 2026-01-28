@@ -71,7 +71,7 @@ export default function Home() {
 
       <main className="flex-1 container mx-auto px-[6%] max-w-[90rem] pt-10">
         {/* Featured Project Block */}
-        <section id="featured-project" className="py-10 md:py-20 my-0 mt-20">
+        <section id="featured-project" className="py-10 my-0 md:py-20 mt-10 mb-10">
           <div className="flex flex-col md:flex-row justify-between gap-10 items-start mx-6">
             <div
               ref={textAreaRef}
@@ -91,7 +91,7 @@ export default function Home() {
                 <h2 className="text-4xl font-semibold tracking-tight text-primary mb-3" style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>
                   {"iF Award winner:"} 
                 </h2>
-                <h2 className="mb-5 font-normal text-base text-primary" style={{ fontFamily: '"Andale Mono", monospace' }}>
+                <h2 className="font-normal text-base text-primary mb-[60px]" style={{ fontFamily: '"Andale Mono", monospace' }}>
                    @Avikus (HD Hyundai)  
                 </h2>
               </div>
