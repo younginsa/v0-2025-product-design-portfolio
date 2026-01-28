@@ -322,7 +322,7 @@ export default function Home() {
                 {words.map((word, index) => (
                   <span
                     key={word}
-                    className={`absolute left-0 whitespace-nowrap transition-all duration-500 ease-in-out ${
+                    className={`absolute left-0 whitespace-nowrap transition-all duration-500 ease-in-out leading-6 ${
                       index === currentWordIndex 
                         ? 'opacity-100 translate-y-0' 
                         : index === (currentWordIndex - 1 + words.length) % words.length
