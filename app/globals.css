@@ -10,10 +10,9 @@
   --color-brand-secondary: 93 98 117;
   --color-brand-accent: 133 137 152;
 
-  /* Updated font to explicit sans-serif stack */
+  /* Updated font to Helvetica Neue */
   /* Typography */
-  --font-family-primary: "Inter", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
-    sans-serif;
+  --font-family-primary: "Helvetica Neue", Helvetica, Arial, -apple-system, BlinkMacSystemFont, sans-serif;
 
   /* Spacing */
   --spacing-xs: 0.25rem;
@@ -359,8 +358,8 @@
 }
 
 @theme inline {
-  /* Added font-sans variable for Tailwind */
-  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", sans-serif;
+  /* Added font-sans variable for Tailwind - Helvetica Neue */
+  --font-sans: "Helvetica Neue", Helvetica, Arial, -apple-system, BlinkMacSystemFont, sans-serif;
 
   --color-background: oklch(var(--background));
   --color-foreground: oklch(var(--foreground));
